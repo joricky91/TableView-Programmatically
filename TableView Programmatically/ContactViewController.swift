@@ -31,6 +31,7 @@ class ContactViewController: UIViewController, UITableViewDataSource, UITableVie
         super.viewDidLoad()
         
         setupTableView()
+        setupNavigation()
         tableView.dataSource = self
         tableView.delegate = self
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
@@ -44,6 +45,11 @@ class ContactViewController: UIViewController, UITableViewDataSource, UITableVie
         tableView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
         tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
         tableView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
+    }
+    
+    func setupNavigation() {
+        navigationItem.title = "Contacts"
+        navigationController?.navigationBar.prefersLargeTitles = true
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
