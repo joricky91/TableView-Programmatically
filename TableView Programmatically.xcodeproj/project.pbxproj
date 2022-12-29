@@ -13,6 +13,7 @@
 		512C7D8D2951DA6A00039718 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 512C7D8C2951DA6A00039718 /* Assets.xcassets */; };
 		512C7D902951DA6A00039718 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 512C7D8E2951DA6A00039718 /* LaunchScreen.storyboard */; };
 		512C7D982951DDEA00039718 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512C7D972951DDEA00039718 /* Contact.swift */; };
+		51C56990295DBF47009CA25B /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C5698F295DBF47009CA25B /* ContactTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		512C7D8F2951DA6A00039718 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		512C7D912951DA6A00039718 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		512C7D972951DDEA00039718 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		51C5698F295DBF47009CA25B /* ContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		512C7D822951DA6700039718 /* TableView Programmatically */ = {
 			isa = PBXGroup;
 			children = (
+				51C5698F295DBF47009CA25B /* ContactTableViewCell.swift */,
 				512C7D832951DA6700039718 /* AppDelegate.swift */,
 				512C7D852951DA6700039718 /* SceneDelegate.swift */,
 				512C7D872951DA6700039718 /* ContactViewController.swift */,
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				512C7D982951DDEA00039718 /* Contact.swift in Sources */,
+				51C56990295DBF47009CA25B /* ContactTableViewCell.swift in Sources */,
 				512C7D882951DA6700039718 /* ContactViewController.swift in Sources */,
 				512C7D842951DA6700039718 /* AppDelegate.swift in Sources */,
 				512C7D862951DA6700039718 /* SceneDelegate.swift in Sources */,

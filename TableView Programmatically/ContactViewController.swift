@@ -34,7 +34,7 @@ class ContactViewController: UIViewController, UITableViewDataSource, UITableVie
         setupNavigation()
         tableView.dataSource = self
         tableView.delegate = self
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        tableView.register(ContactTableViewCell.self, forCellReuseIdentifier: "cell")
     }
 
     func setupTableView() {
@@ -57,14 +57,19 @@ class ContactViewController: UIViewController, UITableViewDataSource, UITableVie
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = contactArray[indexPath.row].name
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ContactTableViewCell
+        cell.nameLabel.text = contactArray[indexPath.row].name
+        cell.titleLabel.text = contactArray[indexPath.row].title
         
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 70
     }
     
 }
